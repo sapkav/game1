@@ -1,0 +1,102 @@
+@import "normalize";
+@import "base";
+@import "fonts";
+
+.baloons{
+    background-image: url(../img/win.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    h1 {
+        color:#9e0909;
+        @include playFair;
+        font-size: 40px;
+    }
+  }
+
+  .lose {
+    background-image: url(../img/unnamed.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+.spisok{
+
+.header{
+    display: grid;  
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+    }
+    .btn1 {
+        margin-top: 30px;
+        padding: 8px 40px;
+        color: white;
+       background-color: #5b98db;
+       font-size: 20px;
+       transition: ease-in-out .5s color, ease-in-out .5s transform, ease-in-out .5s background-color;
+       border: none;
+    }
+
+    .btn1:hover {
+       transform: scale(1.2);
+       color:yellow;
+       background-color: #081f39;
+    }
+
+    .btn2 {
+        margin-top: 30px;
+        padding: 8px 40px;
+        border: none;
+        color: white;
+        background-color: #5b98db;
+        font-size: 20px;
+        transition: ease-in-out .3s color, ease-in-out .3s transform, ease-in-out .3s background-color;
+    }
+
+    .btn2:hover {
+        transform: scale(1.09);
+        color: #092f08;
+        background-color: #feff7e;
+    }
+
+    .btn3 {
+        margin-top: 30px;
+        padding: 8px 40px;
+        border: none;
+        color: #000000;
+        font-weight: 700;
+        background-color: #b0ff67;
+        font-size: 20px;
+    }
+
+    .btn4 {
+        margin-top: 30px;
+        padding: 8px 40px;
+        border: none;
+        color:#47c3f6;
+        font-weight: 700;
+        background-color: #06642a;
+        font-size: 20px;
+    }
+
+
+}
+
+.stol {
+    margin: 0 auto;
+    td {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border: 1px solid black;
+    font-weight: 700;
+}
+}
+}
+
+@import "media"
